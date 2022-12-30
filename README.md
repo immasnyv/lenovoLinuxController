@@ -15,6 +15,7 @@ Basic Lenovo Controller for Linux Mint which lets you set and check power profil
  - Shows current power profile (low power/balanced/performance)
  - Shows state of conservation mode/battery charge limit - 3 s refresh rate (1 - activated, 0 - deactivated)
  - Click changes the power profile (performance -> balanced -> low power)
+
 You can also find here `script_bat.sh` which toggles battery conservation mode. Unfortunately there was no option to control it from the applet.
 
 ## Screenshot
