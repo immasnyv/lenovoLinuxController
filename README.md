@@ -17,7 +17,7 @@ Basic Lenovo Controller for Linux Mint which lets you set and check power profil
  - Click changes the power profile (performance -> balanced -> low power)
 
 ## Screenshot
- 	![Screenshot of applet](img/preview.png)
+![Screenshot of applet](img/preview.png)
   
 ## Disclaimer
 As always, use it at your own risk. While the changes of breaking or damaging your device are very low, I can't guarantee it. 
