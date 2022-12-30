@@ -1,7 +1,7 @@
 #!/bin/bash
 # Linux based Lenovo Thinkbook profile changer V1.0
 # Intended for use with bash sensors widget in linux mint
-# Author: Vojta
+# Author: Vojcztek
 
 state=$(</sys/firmware/acpi/platform_profile)
 echo "Switched to: "

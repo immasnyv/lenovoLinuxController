@@ -7,17 +7,18 @@ Basic Lenovo Controller for Linux Mint which lets you set and check power profil
 
 ## Instruction
  1. Install and add [*Bash Sensors*](https://cinnamon-spices.linuxmint.com/applets/view/231) applet to taskbar.
- 2. Download lenovoLinuxController.json configuration file and import it into the applet.
- 3. Download script.sh and copy it into /home folder.
+ 2. Download `lenovoLinuxController.json` configuration file and import it into the applet.
+ 3. Download `script.sh` and copy it into /home folder.
  4. Enjoy
 
 ## Features
  - Shows current power profile (low power/balanced/performance)
  - Shows state of conservation mode/battery charge limit - 3 s refresh rate (1 - activated, 0 - deactivated)
  - Click changes the power profile (performance -> balanced -> low power)
+You can also find here `script_bat.sh` which toggles battery conservation mode. Unfortunately there was no option to control it from the applet.
 
 ## Screenshot
 ![Screenshot of applet](img/preview.png)
   
 ## Disclaimer
-As always, use it at your own risk. While the changes of breaking or damaging your device are very low, I can't guarantee it. 
+As always, use it at your own risk. Despite the changes of breaking or damaging your device are very low, I can't guarantee it. 
