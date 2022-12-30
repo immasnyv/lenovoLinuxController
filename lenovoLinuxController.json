@@ -1,0 +1,117 @@
+{
+    "head": {
+        "type": "header",
+        "description": "Settings - Bash Sensors (write commands in Bash!)"
+    },
+    "title": {
+        "type": "entry",
+        "default": "Bash sensors",
+        "description": "Title",
+        "tooltip": "Title used when displaying notifications",
+        "value": "Lenovo controller"
+    },
+    "refreshInterval": {
+        "type": "spinbutton",
+        "default": 10,
+        "min": 0,
+        "max": 60,
+        "step": 1,
+        "units": "seconds",
+        "description": "Refresh interval [0 for no refresh]",
+        "value": 3.0
+    },
+    "shell": {
+        "type": "entry",
+        "default": "sh",
+        "description": "Shell",
+        "tooltip": "Shell to be used ('-c' will be used to call commands)",
+        "value": "sh"
+    },
+    "head1": {
+        "type": "header",
+        "description": "Commands"
+    },
+    "script1": {
+        "type": "entry",
+        "default": "echo 'hello, cinnamon!'",
+        "description": "Command 1",
+        "tooltip": "first line of output (use \\f for more lines)",
+        "value": "echo Profile : `cat /sys/firmware/acpi/platform_profile`"
+    },
+    "enableScript2": {
+        "type": "checkbox",
+        "default": true,
+        "description": "Two-line mode (command 2 enabled)",
+        "value": true
+    },
+    "script2": {
+        "type": "entry",
+        "default": "echo 'configuration required'",
+        "description": "Command 2",
+        "tooltip": "second line of output (optional)",
+        "dependency": "enableScript2",
+        "value": "echo Battery limit: `cat /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode`"
+    },
+    "head2": {
+        "type": "header",
+        "description": "Icon"
+    },
+    "dynamicIcon": {
+        "type": "checkbox",
+        "default": false,
+        "description": "Dynamic icon (use output of icon command as icon)",
+        "value": false
+    },
+    "iconScript": {
+        "type": "entry",
+        "default": "",
+        "description": "Static icon or command returning the full path to an icon",
+        "tooltip": "command should return an icon (leave empty for no icon)",
+        "value": ""
+    },
+    "head3": {
+        "type": "header",
+        "description": "Tooltip"
+    },
+    "dynamicTooltip": {
+        "type": "checkbox",
+        "default": false,
+        "description": "Dynamic tooltip (use output of tooltip command as tooltip)",
+        "value": false
+    },
+    "tooltipScript": {
+        "type": "entry",
+        "default": "Bash sensors!",
+        "description": "Tooltip command or static tooltip text",
+        "tooltip": "tooltip (static or dynamic)",
+        "value": "Lenovo controller"
+    },
+    "head4": {
+        "type": "header",
+        "description": "Command on applet click"
+    },
+    "menuScript": {
+        "type": "entry",
+        "default": "sensors",
+        "description": "Menu command (on applet left-click)",
+        "tooltip": "allows to display lots of information in popup menu",
+        "value": "/home/script.sh"
+    },
+    "menuScriptDisplay": {
+        "type": "checkbox",
+        "default": true,
+        "description": "Display output of menu command",
+        "value": true
+    },
+    "head5": {
+        "type": "header",
+        "description": "Command on start-up"
+    },
+    "startupScript": {
+        "type": "entry",
+        "default": "",
+        "description": "Command run at start-up",
+        "value": ""
+    },
+    "__md5__": "80f0a5ee236cf15e0897079f92e88acd"
+}
